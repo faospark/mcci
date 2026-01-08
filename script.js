@@ -1,5 +1,6 @@
 // Dark Mode Toggle
 const themeToggle = document.getElementById('themeToggle');
+const themeToggleMobile = document.getElementById('themeToggleMobile');
 const htmlElement = document.documentElement;
 
 // Check for saved theme preference or default to light mode
@@ -7,16 +8,22 @@ const currentTheme = localStorage.getItem('theme') || 'light';
 htmlElement.setAttribute('data-theme', currentTheme);
 updateThemeIcon(currentTheme);
 
-themeToggle.addEventListener('click', () => {
+// Function to toggle theme
+function toggleTheme() {
     const theme = htmlElement.getAttribute('data-theme');
     const newTheme = theme === 'light' ? 'dark' : 'light';
     
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
-});
+}
+
+// Add event listeners to both toggle buttons
+themeToggle.addEventListener('click', toggleTheme);
+themeToggleMobile.addEventListener('click', toggleTheme);
 
 function updateThemeIcon(theme) {
+    // Update desktop toggle icon
     const icon = themeToggle.querySelector('i');
     if (theme === 'dark') {
         icon.classList.remove('bi-moon-fill');
@@ -24,6 +31,16 @@ function updateThemeIcon(theme) {
     } else {
         icon.classList.remove('bi-sun-fill');
         icon.classList.add('bi-moon-fill');
+    }
+    
+    // Update mobile toggle icon
+    const mobileIcon = themeToggleMobile.querySelector('i');
+    if (theme === 'dark') {
+        mobileIcon.classList.remove('bi-moon-fill');
+        mobileIcon.classList.add('bi-sun-fill');
+    } else {
+        mobileIcon.classList.remove('bi-sun-fill');
+        mobileIcon.classList.add('bi-moon-fill');
     }
 }
 

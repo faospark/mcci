@@ -20,10 +20,15 @@
             <a class="navbar-brand" href="#hero">
                 <strong>MCCi</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center ms-auto d-lg-none">
+                <button class="btn btn-sm theme-toggle me-2" id="themeToggleMobile" aria-label="Toggle dark mode">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" 
+                        aria-controls="navbarOffcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -39,6 +44,12 @@
                         <a class="nav-link" href="#purpose">Purpose</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#divisions">Divisions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertise">Expertise</a>
+                    </li>
+                    <li class="nav-item">
                         <button class="btn btn-sm ms-2 theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                             <i class="bi bi-moon-fill"></i>
                         </button>
@@ -47,6 +58,36 @@
             </div>
         </div>
     </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel"><strong>MCCi</strong></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#leadership" data-bs-dismiss="offcanvas">Leadership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mission-vision" data-bs-dismiss="offcanvas">Mission and Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#purpose" data-bs-dismiss="offcanvas">Purpose</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#divisions" data-bs-dismiss="offcanvas">Divisions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#expertise" data-bs-dismiss="offcanvas">Expertise</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section d-flex align-items-center">
@@ -383,6 +424,84 @@
                         <div class="purpose-item">
                             <div class="purpose-number">9</div>
                             <p>Recognize, and certify micro-credential courses offered in the Philippines, and the World.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic and Professional Divisions Section -->
+    <section id="divisions" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center mb-5">Academic and Professional Divisions of Specialization</h2>
+                    
+                    <p class="lead mb-4">
+                        To ensure focused development, quality assurance, and strategic expansion of its microcredential offerings, the Council shall organize its programs and initiatives around defined Academic and Professional Divisions of Specialization. These divisions represent the primary fields in which microcredential pathways may be developed and offered across participating institutions and industry partners. Initially, the Council shall streamline its scope by concentrating on three major specialty clusters, subject to refinement based on the results of a membership and institutional needs survey. These clusters include:
+                    </p>
+
+                    <div class="purpose-list">
+                        <div class="purpose-item">
+                            <div class="purpose-number">1</div>
+                            <p><strong>Social Sciences, Humanities, and Education</strong> – encompassing Communication and Media, Arts and Humanities, Social and Behavioral Sciences, Education, Psychology, and Theology.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">2</div>
+                            <p><strong>Business and Service Industry</strong> – covering Business and Management, Entrepreneurship, Accounting and Finance, Hospitality, Tourism, and related service-sector disciplines.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">3</div>
+                            <p><strong>Science, Engineering, and Technology</strong> – including Natural and Physical Sciences, Information Technology, Engineering and Applied Technology fields, Health and Medical Sciences, Allied Health Programs, Agriculture, and Fisheries.</p>
+                        </div>
+                    </div>
+
+                    <p class="lead mt-4">
+                        These divisions serve as the foundational organizational structure for planning, curriculum development, capacity-building initiatives, research agenda-setting, and engagement with academic, industry, and international partners.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Expertise Areas Section -->
+    <section id="expertise" class="py-5 section-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center mb-5">Educational Expertise Areas</h2>
+                    
+                    <p class="lead mb-4">
+                        To support the development of high-quality, research-informed, and globally aligned microcredential programs, the Council recognizes key Educational Expertise Areas that guide its capacity-building initiatives, quality assurance processes, and professional community engagements. These areas represent specialized domains of practice essential to effective microcredential design, delivery, evaluation, and learner support. The Council shall foster collaboration and professional development within the following expertise areas:
+                    </p>
+
+                    <div class="purpose-list">
+                        <div class="purpose-item">
+                            <div class="purpose-number">1</div>
+                            <p><strong>Institutional Management, Quality Assurance, and Policy</strong> – addressing governance, strategic planning, quality assurance, accreditation, and policy development related to microcredentials and lifelong learning ecosystems.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">2</div>
+                            <p><strong>Curriculum, Instructional Design and Pedagogy</strong> – covering curriculum development, outcomes-based education, innovative learning strategies, microlearning structures, and instructional coherence across programs.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">3</div>
+                            <p><strong>Learning Technology (Educational and Information Technology)</strong> – focusing on digital learning environments, LMS integration, educational technologies, AI-supported learning systems, and digital credentialing platforms.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">4</div>
+                            <p><strong>Learning Science, and Assessment</strong> – incorporating evidence-based learning models, competency standards, formative and summative assessment methods, authentic assessment design, and recognition of prior learning.</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">5</div>
+                            <p><strong>Student Welfare and Specialized Services</strong> – ensuring holistic learner support, advising, guidance, accessibility services, and the inclusion of diverse learners in microcredential pathways.</p>
                         </div>
                     </div>
                 </div>
