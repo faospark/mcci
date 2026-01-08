@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-credential Council, Inc.</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <strong>MCCi</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leadership">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mission-vision">Mission and Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#purpose">Purpose</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-sm ms-2 theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-2 fw-bold mb-4 hero-title">Micro-credential Council, Inc.</h1>
+            <p class="lead mb-5">Advancing High-Quality, Interoperable Micro-credentials for Lifelong Learning</p><br/>
+            <a href="#about" class="btn btn-primary btn-lg cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center mb-5">About Us</h2>
+                    <p class="lead text-center">
+                        Micro-credential Council, Inc. is a professional, non-stock, non-profit organization that brings together educators, researchers, institutions, industry partners, and policymakers committed to advancing micro-credentials and lifelong learning. While rooted in the Philippines, its membership extends to international partners and is open to individuals and institutions across Asia and beyond.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-5 section-alt">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Leadership</h2>
+            
+            <!-- Leadership Hero Image -->
+            <div class="leadership-image-container mb-5">
+                <img src="img/mk-crop.jpg" alt="Micro-credential Council" class="leadership-hero-image">
+            </div>
+            
+            <h4 class="text-center mb-5">Micro-credential Council Officers</h4>
+            
+            <div class="row g-4">
+                <!-- Officer 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Howell T. Ho">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">President</h5>
+                            <p class="card-text">
+                                Dr. Howell T. Ho<br>
+                                <small class="text-muted">(TUA)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Ms. Joan M. Belga">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Vice President</h5>
+                            <p class="card-text">
+                                Ms. Joan M. Belga<br>
+                                <small class="text-muted">(ISUFST)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Mr. Dick O. Eugenio">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Corresponding Secretary</h5>
+                            <p class="card-text">
+                                Mr. Dick O. Eugenio<br>
+                                <small class="text-muted">(WCC)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Von Ralph Dane M. Herbuela">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Asst. Corresponding Secretary</h5>
+                            <p class="card-text">
+                                Dr. Von Ralph Dane M. Herbuela<br>
+                                <small class="text-muted">(TU)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Mark Daevid M. Adem">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Recording Secretary</h5>
+                            <p class="card-text">
+                                Dr. Mark Daevid M. Adem<br>
+                                <small class="text-muted">(TUA)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Mr. Odilon De Guzman">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Treasurer</h5>
+                            <p class="card-text">
+                                Mr. Odilon De Guzman<br>
+                                <small class="text-muted">(Rex)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 7 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Mr. Stephen Raymund T. Jinon">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Auditor</h5>
+                            <p class="card-text">
+                                Mr. Stephen Raymund T. Jinon<br>
+                                <small class="text-muted">(ISUFST)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 8 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Mr. Allan Paul R. Tang">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Business Manager</h5>
+                            <p class="card-text">
+                                Mr. Allan Paul R. Tang<br>
+                                <small class="text-muted">(MC)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 9 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Ms. Hadassah Castro">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">PRO (Int.)</h5>
+                            <p class="card-text">
+                                Ms. Hadassah Castro<br>
+                                <small class="text-muted">(MC)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 10 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Immanuel T. San Diego">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">PRO (Ext.)</h5>
+                            <p class="card-text">
+                                Dr. Immanuel T. San Diego<br>
+                                <small class="text-muted">(TUA)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 11 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Eiji Tomida">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Adviser</h5>
+                            <p class="card-text">
+                                Dr. Eiji Tomida<br>
+                                <small class="text-muted">(EU)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Officer 12 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card leadership-card h-100">
+                        <div class="officer-image-container">
+                            <img src="./img/user.png" 
+                                 class="card-img-top officer-image" alt="Dr. Greg T. Pawilen">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Adviser</h5>
+                            <p class="card-text">
+                                Dr. Greg T. Pawilen<br>
+                                <small class="text-muted">(UPLB)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mission and Vision</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 mission-vision-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-eye-fill fs-1 me-3 icon-primary"></i>
+                                <h3 class="mb-0">Vision</h3>
+                            </div>
+                            <p class="lead">
+                                A dynamically and globally connected community advancing high-quality, interoperable micro-credentials for lifelong learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 mission-vision-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-bullseye fs-1 me-3 icon-primary"></i>
+                                <h3 class="mb-0">Mission</h3>
+                            </div>
+                            <p class="lead">
+                                To empower educators, researchers, institutions, industry partners, and policymakers through collaboration, research, capacity building, offering, standards-driven innovation and certification in micro-credential development and recognition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section id="purpose" class="py-5 section-alt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center mb-5">Purpose</h2>
+                    
+                    <p class="lead mb-4">
+                        The Council is established to advance micro-credentials as essential components of lifelong learning, skills development, and global workforce readiness. To fulfill this mandate, the Council shall:
+                    </p>
+
+                    <div class="purpose-list">
+                        <div class="purpose-item">
+                            <div class="purpose-number">1</div>
+                            <p>Promote the growth, understanding, and responsible implementation of micro-credentials in education, training, and professional development;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">2</div>
+                            <p>Provide training and capacity building programs that equip educators, institutions, and industry partners with the competencies needed to design, deliver, and evaluate micro-credential programs;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">3</div>
+                            <p>Support micro-credential offerings by enabling the development, dissemination, and recognition of high-quality micro-credential models across diverse disciplines and sectors;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">4</div>
+                            <p>Foster research and advancement by encouraging studies, innovation, and continuous improvement in micro-credential practices, pedagogies, systems, and technologies;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">5</div>
+                            <p>Strengthen industry connections to ensure that micro-credentials remain relevant, responsive, and aligned with evolving labor market and workforce needs;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">6</div>
+                            <p>Ensure quality assurance by promoting alignment with national and international standards and frameworks, including those of government bodies, national qualification frameworks, and other global bodies;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">7</div>
+                            <p>Promote international collaboration by partnering with institutions across borders and harmonizing micro-credential systems to enhance global mobility and recognition;</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">8</div>
+                            <p>Establish and maintain a registry of micro-credential programs, practitioners, and institutions to support transparency, interoperability, and shared recognition within the micro-credential ecosystem; and</p>
+                        </div>
+
+                        <div class="purpose-item">
+                            <div class="purpose-number">9</div>
+                            <p>Recognize, and certify micro-credential courses offered in the Philippines, and the World.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 text-center">
+        <div class="container">
+            <!-- Social Media Links -->
+            <div class="social-links mb-4">
+                <a href="#" class="social-icon" aria-label="Facebook" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Threads" title="Threads">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.704-1.706 0-3.057-.665-4.014-1.979C7.57 14.71 7.053 12.96 7.053 11c0-1.943.51-3.686 1.518-5.18.968-1.435 2.34-2.163 4.075-2.163 1.85 0 3.337.712 4.418 2.118a7.238 7.238 0 0 1 1.355 3.942c1.23.404 2.206 1.04 2.904 1.893.92 1.127 1.366 2.558 1.366 4.378 0 1.642-.472 3.094-1.403 4.319-1.15 1.516-2.909 2.556-5.23 3.09-1.224.282-2.504.424-3.804.424l-.002.001zM12 4.462c-.975 0-1.812.453-2.49 1.347-.748 1.048-1.127 2.432-1.127 4.118 0 1.726.38 3.126 1.127 4.16.676.935 1.513 1.41 2.49 1.41 1.003 0 1.855-.475 2.533-1.413.73-1.01 1.1-2.41 1.1-4.157 0-1.745-.37-3.145-1.1-4.155-.678-.938-1.53-1.41-2.533-1.41z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Bluesky" title="Bluesky">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.038.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.018.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="YouTube" title="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="mb-0">&copy; 2026 Micro-credential Council, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
